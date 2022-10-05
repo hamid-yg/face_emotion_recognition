@@ -1,4 +1,3 @@
-import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.responses import StreamingResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
@@ -30,6 +29,3 @@ def index(request: Request):
             </body>
         </html>
     """
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
