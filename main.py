@@ -1,7 +1,6 @@
 import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.responses import StreamingResponse, HTMLResponse
-from fastapi.staticfiles import StaticFiles
 from camera import Camera
 
 app = FastAPI()
