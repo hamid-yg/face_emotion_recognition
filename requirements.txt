@@ -1,4 +1,4 @@
 fastapi
 uvicorn
 gunicorn
-opencv-python
+opencv-python-headless
