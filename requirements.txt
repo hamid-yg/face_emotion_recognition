@@ -1,0 +1,5 @@
+# Face Emotion Recognition
+
+fastapi
+uvicorn
+opencv-contrib-python
