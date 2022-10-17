@@ -1,6 +1,6 @@
-# fly.toml file generated for faceemotionrecognition on 2022-10-05T16:38:04+02:00
+# fly.toml file generated for face-emotion-recognition on 2022-10-17T16:53:24+02:00
 
-app = "faceemotionrecognition"
+app = "face-emotion-recognition"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []

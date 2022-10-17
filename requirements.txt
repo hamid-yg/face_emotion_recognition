@@ -1,4 +1,5 @@
-fastapi
+flask
+flask-socketio
+eventlet
 uvicorn
 gunicorn
-opencv-python-headless
