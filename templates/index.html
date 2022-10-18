@@ -1,11 +1,19 @@
 <html>
-  <head>
-    <title>Face Emotion Recognition</title>
-  </head>
+	<head>
+		<title>Face Emotion Recognition</title>
+		<style>
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 35%
+			}
+		</style>
+  	</head>
 
-  <body>
-    <h1>Face Emotion Recognition</h1>
-    <img id="bg" src="{{ url_for('video_feed') }}">
-  </body>
+	<body>
+		<h1 align="center">Face Emotion Recognition</h1>
+		<img id="bg" class="center" src="{{ url_for('video_feed') }}">
+	</body>
 
 </html>
