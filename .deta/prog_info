@@ -1,1 +1,0 @@
-{"id":"be113c85-6fcb-4e6e-9369-974e06c37033","space":34018,"runtime":"python3.9","name":"face_emotion_recognition","path":"3w243a","project":"a0a3w0f9","account":"144798365827","region":"eu-central-1","deps":["fastapi"],"envs":null,"public":true,"log_level":"debug","cron":""}

@@ -1,6 +1,2 @@
 flask
-flask-socketio
-eventlet
-uvicorn
-gunicorn
-jinja2
+opencv-python

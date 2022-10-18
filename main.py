@@ -1,22 +1,23 @@
-from flask import Flask, render_template
-from flask_socketio import SocketIO
+from flask import Flask, render_template, Response
+from camera import VideoCamera
 
 
 app = Flask(__name__)
-socketio = SocketIO(app)
 
 @app.route('/')
-def home():
-    print("SERVER STARTED")
+def index():
     return render_template('index.html')
 
-@socketio.on('connect')
-def test_connect():
-    print("SOCKET CONNECTED")
+def gen(camera):
+    while True:
+        frame = camera.get_frame()
+        yield (b'--frame\r\n'
+               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
-@socketio.on('my event')
-def handle_my_custom_event(json, methods=['GET', 'POST']):
-    print('received my event: '+ str(json))
+@app.route('/video_feed')
+def video_feed():
+    return Response(gen(VideoCamera()),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    app.run(host='0.0.0.0',port='8000', debug=True)
