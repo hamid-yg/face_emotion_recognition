@@ -1,43 +1,13 @@
-# Face detection using Face-Api.js and Flask
+# Face emotion detection
 
-
-Usage of Face-Api.js in Flask Python server to reduce the compute resources consumption and integrate TF.js resources with Flask by using sockets
-
-# face_emotion_recognition
-
-A web interface to detect Face Emotion through the video camera
+Recognize face emotion using Machine Learning
 
 ## Requirements
 
 - Python 3.9
-- Flast
-- Flask Socket
-- Uvicorn
-- Gunicorn
-- Jinja2
-
-## Setup Virtual environment
-
-You need to create and activate the virtual environment with:
-```bash
-$ python3 -m venv .venv
-$ source .venv/bin/activate
-```
-
-## How to install
-
-To install all the dependencies, you can run:
-```bash
-$ pip install -r requirements.txt
-```
+- OpenCV
+- Tensorflow (Keras)
 
 ## How to run the app in local
 
-After installing all the dependencies, run:
-```bash
-$ gunicorn main:app
-```
-
-## Website Demo
-
-You can access the website here: 
+Open the .ipynb and run each step using your favorite IDE.
